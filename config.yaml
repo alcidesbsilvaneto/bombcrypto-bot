@@ -10,7 +10,7 @@
     #
     # [pt_BR] Intervalo de tempo para verificar se há heróis disponíveis para trabalhar
     # Valor padrão (em minutos): 10
-    send_heroes_for_work: 10
+    send_heroes_for_work: 5
 
     # [en_US] Time interval to update heroes position in the map,
     # Default value (in minutes): 3
@@ -24,7 +24,7 @@
     #
     # [pt_BR] Intervalo de tempo para verificar por novos mapas
     # Valor padrão (em segundos): 5
-    check_for_new_map_button: 2
+    check_for_new_map_button: 0.5
 
     # [en_US] Time interval to check for captcha.
     # Default value (in minutes): 1
@@ -38,7 +38,7 @@
     #
     # [pt_BR] Intervalo de tempo para verificar se existe solicitação de login
     # Valor padrão (em minutos): 5
-    check_for_login: 5
+    check_for_login: 2
 
     # [en_US] Time interval between moviments
     # Default value (in seconds): 1
@@ -58,6 +58,13 @@
     # [pt_BR]
     # Valor padrão: 0.7
     default: 0.7
+
+    # [en_US]
+    # Default value: 0.7
+    #
+    # [pt_BR]
+    # Valor padrão: 0.7
+    rest: 0.9
 
     # [en_US]
     # Default value: 0.8
@@ -100,6 +107,54 @@
     # [pt_BR]
     # Valor padrão: 0.9
     go_to_work_btn: 0.9
+
+    # Total baus roxo
+    # [en_US]
+    # Default value: 0.7
+    #
+    # [pt_BR]
+    # Valor padrão: 0.7
+    bau_roxo: 0.7
+
+    # Total baus roxo pouca vida
+    # [en_US]
+    # Default value: 0.8
+    #
+    # [pt_BR]
+    # Valor padrão: 0.8
+    bau_roxo_50: 0.8
+
+    # Total baus roxo
+    # [en_US]
+    # Default value: 0.7
+    #
+    # [pt_BR]
+    # Valor padrão: 0.7
+    bau_gold: 0.7
+
+    # Total baus roxo pouca vida
+    # [en_US]
+    # Default value: 0.8
+    #
+    # [pt_BR]
+    # Valor padrão: 0.8
+    bau_gold_50: 0.8
+
+    # Total baus roxo
+    # [en_US]
+    # Default value: 0.7
+    #
+    # [pt_BR]
+    # Valor padrão: 0.7
+    bau_blue: 0.7
+
+    # Total baus roxo pouca vida
+    # [en_US]
+    # Default value: 0.8
+    #
+    # [pt_BR]
+    # Valor padrão: 0.8
+    bau_blue_50: 0.8
 
     # [en_US]
     # Default value: 0.9
