@@ -205,6 +205,8 @@ def scroll():
             if (len(commoms) == 0):
                 commoms = positions(images['epic-text'], threshold=ct['epic'])
                 if (len(commoms) == 0):
+                    commoms = positions(images['legend-text'], threshold=ct['legend'])
+                if (len(commoms) == 0):
                     return
     x,y,w,h = commoms[len(commoms)-1]
 
@@ -256,6 +258,7 @@ def descobreRaridade(bar):
     rares = positions(images['rare-text'], threshold=ct['rare'])
     super_rares = positions(images['super_rare-text'], threshold=ct['super_rare'])
     epics = positions(images['epic-text'], threshold=ct['epic'])
+    legends = positions(images['legend-text'], threshold=ct['legend'])
 
     y = bar[1]
 
@@ -282,6 +285,12 @@ def descobreRaridade(bar):
         isAbove = y > (button_y - button_h)
         if isBelow and isAbove:
             return 'epic'
+
+    for (_, button_y, _, button_h) in legends:
+        isBelow = y < (button_y + button_h)
+        isAbove = y > (button_y - button_h)
+        if isBelow and isAbove:
+            return 'legend'
 
     return 'null'
 
